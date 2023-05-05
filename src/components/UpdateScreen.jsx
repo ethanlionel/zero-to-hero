@@ -3,9 +3,15 @@ import { useState } from "react";
 const UpdateScreen = () => {
   const [count, setCount] = useState(0);
 
-  return (
-    <div>UpdateScreen</div>
-  )
-}
+  const handleClick = () => {
+    setCount(count + 1);
+  };
 
-export default UpdateScreen
+  return (
+    <button onClick={handleClick} style={{ display: "block" }}>
+      Clicked {count} times
+    </button>
+  );
+};
+
+export default UpdateScreen;

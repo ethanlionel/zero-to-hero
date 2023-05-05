@@ -4,6 +4,7 @@ import RenderingList from "./components/RenderingList";
 import RespondingEvent from "./components/RespondingEvent";
 import SharingDataState from "./components/SharingDataState";
 import UpdateScreen from "./components/UpdateScreen";
+import { TicTacToe } from "./components/TicTacToe";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ const App = () => {
       <UpdateScreen />
       <SharingDataState count={count} onClick={handleClick} />
       <SharingDataState count={count} onClick={handleClick} />
+      <TicTacToe />
     </>
   );
 };
